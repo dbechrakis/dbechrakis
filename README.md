@@ -46,23 +46,23 @@ NLP and retrieval-augmented generation project focused on extracting insights fr
 
 ---
 
-### 📊 Superstore Business Intelligence
+### 📊 Superstore — Regional Profitability & Shipping Analytics
 
-Business analytics project focused on sales performance, profitability, customer segments, and actionable commercial insights through interactive BI analysis.
+Business intelligence case study using Python and Power BI to identify regional profitability gaps and investigate whether commercial or shipping factors explain performance differences.
 
-**Stack:** Power BI · DAX · SQL · Data Analysis
+**Stack:** Power BI · DAX · Python · pandas · Data Analysis
 
-→ [View project](https://github.com/dbechrakis/superstore)
+→ [View project](https://github.com/dbechrakis/superstore-shipping-region-analysis)
 
 ---
 
-### 🏨 Hotel Booking — Predictive Analytics
+### 🏨 Hotel Booking — Cancellation Prediction
 
-Predictive analytics project investigating hotel booking behavior and cancellation risk, translating model outputs into business-oriented insights.
+End-to-end machine learning case study predicting hotel booking cancellations and translating model outputs into actionable revenue-management insights, with SHAP-based explainability.
 
-**Stack:** Python · Pandas · Scikit-learn · Machine Learning
+**Stack:** Python · Pandas · Scikit-learn · SHAP · Machine Learning
 
-→ [View project](https://github.com/dbechrakis/hotel-booking)
+→ [View project](https://github.com/dbechrakis/hotel-booking-cancellation-ml)
 
 ---
 
