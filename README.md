@@ -26,26 +26,6 @@ Jupyter · Streamlit · GitHub · VS Code
 
 ## Featured Projects
 
-### 🎬 Movie Industry Analytics — Data Pipeline & Decision Dashboard
-
-End-to-end analytics project transforming TMDB movie data into an analytical data mart and interactive decision dashboard.
-
-**Stack:** Python · PostgreSQL · dbt · Streamlit · SQL
-
-→ [View project](https://github.com/dbechrakis/movie-analytics-data-pipeline)
-
----
-
-### 🎮 Steam Reviews NLP & RAG
-
-NLP and retrieval-augmented generation project focused on extracting insights from large-scale Steam game reviews and making the information accessible through a retrieval-based workflow.
-
-**Stack:** Python · NLP · Embeddings · RAG · Machine Learning
-
-→ [View project](https://github.com/dbechrakis/steam-reviews-nlp-rag)
-
----
-
 ### 📊 Superstore — Regional Profitability & Shipping Analytics
 
 Business intelligence case study using Python and Power BI to identify regional profitability gaps and investigate whether commercial or shipping factors explain performance differences.
@@ -53,6 +33,16 @@ Business intelligence case study using Python and Power BI to identify regional 
 **Stack:** Power BI · DAX · Python · pandas · Data Analysis
 
 → [View project](https://github.com/dbechrakis/superstore-shipping-region-analysis)
+
+---
+
+### 🎬 Movie Industry Analytics — Data Pipeline & Decision Dashboard
+
+End-to-end analytics project transforming TMDB movie data into an analytical data mart and interactive decision dashboard.
+
+**Stack:** Python · PostgreSQL · dbt · Streamlit · SQL
+
+→ [View project](https://github.com/dbechrakis/movie-analytics-data-pipeline)
 
 ---
 
@@ -66,7 +56,17 @@ End-to-end machine learning case study predicting hotel booking cancellations an
 
 ---
 
-## My approach
+### 🎮 Steam Reviews — NLP & RAG
+
+Applied NLP project turning large-scale customer reviews into sentiment signals, semantic search, topic discovery, explainable predictions, and a retrieval-augmented Q&A application.
+
+**Stack:** Python · NLP · DistilBERT · Embeddings · FAISS · RAG
+
+→ [View project](https://github.com/dbechrakis/steam-reviews-nlp-rag)
+
+---
+
+## How I approach analytics
 
 ```text
 Business Question
