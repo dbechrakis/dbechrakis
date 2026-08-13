@@ -2,9 +2,9 @@
 
 ### Business & Data Analyst | Analytics · BI · Applied Data Science
 
-I build data-driven solutions that turn business questions into **clear analysis, actionable insights, and decision-ready outputs**.
+I work on business and data problems, using **SQL, Python and Power BI** to understand what is happening in the numbers and turn it into useful recommendations.
 
-My work sits at the intersection of **business analytics, BI, data engineering, and applied machine learning** — with a focus on solving practical problems rather than building models for the sake of it.
+I also work with **data pipelines, machine learning and NLP**. I’m most interested in projects where the analysis has a clear purpose and can help someone make a better business decision.
 
 ---
 
