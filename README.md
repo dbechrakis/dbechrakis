@@ -6,6 +6,12 @@ I work in **Sales Ancillary at Etraveli Group**, analysing commercial performanc
 
 The questions I enjoy most are practical: **What changed? Which segment explains it? What should we do next?** I use SQL, Python and BI tools to move from a headline metric to the evidence behind a decision.
 
+## Featured: Superstore Profitability Explorer
+
+[![Superstore interactive profitability explorer](https://raw.githubusercontent.com/dbechrakis/superstore-shipping-region-analysis/main/docs/portfolio-overview.jpg)](https://github.com/dbechrakis/superstore-shipping-region-analysis#interactive-portfolio-demo)
+
+**Explore $2.30M in sample sales:** filter by year, region and category, compare margins and inspect the evidence behind the recommendations. [Screenshot, source and running instructions](https://github.com/dbechrakis/superstore-shipping-region-analysis#interactive-portfolio-demo).
+
 ## Selected work
 
 | Project | What to inspect |
