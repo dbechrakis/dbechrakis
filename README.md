@@ -8,27 +8,27 @@ The questions I enjoy most are practical: **What changed? Which segment explains
 
 ## Featured: Superstore Profitability Explorer
 
-[![Superstore interactive profitability explorer](https://raw.githubusercontent.com/dbechrakis/superstore-shipping-region-analysis/main/docs/portfolio-overview.jpg)](https://github.com/dbechrakis/superstore-shipping-region-analysis#interactive-portfolio-demo)
+**[Open the live demo →](https://dbechrakis-superstore.bechrakisd.chatgpt.site)** · [View the analysis and source](https://github.com/dbechrakis/superstore-shipping-region-analysis)
+
+[![Superstore interactive profitability explorer](https://raw.githubusercontent.com/dbechrakis/superstore-shipping-region-analysis/main/docs/portfolio-overview.jpg)](https://dbechrakis-superstore.bechrakisd.chatgpt.site)
 
 **Explore $2.30M in sample sales:** filter by year, region and category, compare margins and inspect the evidence behind the recommendations. [Screenshot, source and running instructions](https://github.com/dbechrakis/superstore-shipping-region-analysis#interactive-portfolio-demo).
 
 ## Selected work
 
-| Project | What to inspect |
+| Project | Evidence at a glance |
 |---|---|
-| [Superstore: regional profitability](https://github.com/dbechrakis/superstore-shipping-region-analysis) | Regional margin gaps, commercial hypotheses and an explicit distinction between dispatch time and delivery time. |
-| [Movie analytics pipeline](https://github.com/dbechrakis/movie-analytics-data-pipeline) | API ingestion → PostgreSQL → dbt → Streamlit, with metric definitions and sampling limitations. |
-| [Steam reviews: NLP and RAG](https://github.com/dbechrakis/steam-reviews-nlp-rag) | My work on embeddings, DistilBERT and retrieval; saved evaluation evidence and its limitations. |
-| [Hotel cancellation modelling](https://github.com/dbechrakis/hotel-booking-cancellation-ml) | Cancellation-risk modelling, feature availability and chronological validation. |
+| [Superstore: regional profitability](https://github.com/dbechrakis/superstore-shipping-region-analysis) | **7.02 percentage-point margin gap:** Central **7.92%** vs West **14.94%**, across **9,994 order lines**. [Live demo](https://dbechrakis-superstore.bechrakisd.chatgpt.site). |
+| [Movie analytics pipeline](https://github.com/dbechrakis/movie-analytics-data-pipeline) | **2 dbt models:** movie-level staging and genre × decade summary. TMDB → PostgreSQL → Streamlit; filter regression tested on synthetic data, live pipeline not rerun. |
+| [Steam reviews: NLP and RAG](https://github.com/dbechrakis/steam-reviews-nlp-rag) | DistilBERT: **92.9% accuracy · 0.887 macro F1** on **24,342 held-out-game reviews**. My work: embeddings, fine-tuning and retrieval. Recorded results; training not rerun. |
+| [Hotel cancellation modelling](https://github.com/dbechrakis/hotel-booking-cancellation-ml) | Random Forest: **0.809 ROC AUC · 0.682 average precision** on **23,989 later-period bookings**. Chronological validation with leakage controls. |
 
-These are portfolio and academic case studies. They demonstrate methods and analytical judgement; they do not claim production deployment or realised commercial uplift.
+These are portfolio and academic case studies. The Superstore explorer is a public interactive demo. The figures above describe analytical findings, model performance or implementation scope—not realised commercial uplift.
 
 ## Tools I use
 
 - **Business analytics:** SQL, Python, pandas, Excel, Power BI/DAX, Qlik Sense and Looker.
 - **Data workflows:** PostgreSQL, dbt, APIs, Git and Streamlit.
 - **Applied data science:** scikit-learn, NLP, embeddings and predictive modelling.
-
-My current focus is bringing stronger measurement, reproducibility and clear business interpretation to every analysis.
 
 [LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/)
