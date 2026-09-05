@@ -1,112 +1,28 @@
 # Dimitrios Bechrakis
 
-### Business & Data Analyst | Analytics · BI · Applied Data Science
+### Business Analyst · Statistics background · MSc Data Science
 
-I work on business and data problems, using **SQL, Python and Power BI** to understand what is happening in the numbers and turn it into useful recommendations.
+I work in **Sales Ancillary at Etraveli Group**, analysing commercial performance in travel. My route into analytics started with a degree in **Statistics** and experience in **banking**; I am now completing a part-time **MSc in Data Science at Deree / The American College of Greece**.
 
-I also work with **data pipelines, machine learning and NLP**. I’m most interested in projects where the analysis has a clear purpose and can help someone make a better business decision.
+The questions I enjoy most are practical: **What changed? Which segment explains it? What should we do next?** I use SQL, Python and BI tools to move from a headline metric to the evidence behind a decision.
 
----
+## Selected work
 
-## What I work with
+| Project | What to inspect |
+|---|---|
+| [Superstore: regional profitability](https://github.com/dbechrakis/superstore-shipping-region-analysis) | Regional margin gaps, commercial hypotheses and an explicit distinction between dispatch time and delivery time. |
+| [Movie analytics pipeline](https://github.com/dbechrakis/movie-analytics-data-pipeline) | API ingestion → PostgreSQL → dbt → Streamlit, with metric definitions and sampling limitations. |
+| [Steam reviews: NLP and RAG](https://github.com/dbechrakis/steam-reviews-nlp-rag) | My work on embeddings, DistilBERT and retrieval; saved evaluation evidence and its limitations. |
+| [Hotel cancellation modelling](https://github.com/dbechrakis/hotel-booking-cancellation-ml) | Cancellation-risk modelling, feature availability and chronological validation. |
 
-**Analytics & BI**  
-Python · SQL · Pandas · Power BI · DAX · Excel
+These are portfolio and academic case studies. They demonstrate methods and analytical judgement; they do not claim production deployment or realised commercial uplift.
 
-**Data & Engineering**  
-PostgreSQL · dbt · Data Pipelines · APIs · Git/GitHub
+## Tools I use
 
-**Machine Learning & AI**  
-Scikit-learn · NLP · RAG · Predictive Analytics
+- **Business analytics:** SQL, Python, pandas, Excel, Power BI/DAX, Qlik Sense and Looker.
+- **Data workflows:** PostgreSQL, dbt, APIs, Git and Streamlit.
+- **Applied data science:** scikit-learn, NLP, embeddings and predictive modelling.
 
-**Workflow**  
-Jupyter · Streamlit · GitHub · VS Code
+My current focus is bringing stronger measurement, reproducibility and clear business interpretation to every analysis.
 
----
-
-## Featured Projects
-
-### 📊 Superstore — Regional Profitability & Shipping Analytics
-
-Business intelligence case study using Python and Power BI to identify regional profitability gaps and investigate whether commercial or shipping factors explain performance differences.
-
-**Stack:** Power BI · DAX · Python · pandas · Data Analysis
-
-→ [View project](https://github.com/dbechrakis/superstore-shipping-region-analysis)
-
----
-
-### 🎬 Movie Industry Analytics — Data Pipeline & Decision Dashboard
-
-End-to-end analytics project transforming TMDB movie data into an analytical data mart and interactive decision dashboard.
-
-**Stack:** Python · PostgreSQL · dbt · Streamlit · SQL
-
-→ [View project](https://github.com/dbechrakis/movie-analytics-data-pipeline)
-
----
-
-### 🏨 Hotel Booking — Cancellation Prediction
-
-End-to-end machine learning case study predicting hotel booking cancellations and translating model outputs into actionable revenue-management insights, with SHAP-based explainability.
-
-**Stack:** Python · Pandas · Scikit-learn · SHAP · Machine Learning
-
-→ [View project](https://github.com/dbechrakis/hotel-booking-cancellation-ml)
-
----
-
-### 🎮 Steam Reviews — NLP & RAG
-
-Applied NLP project turning large-scale customer reviews into sentiment signals, semantic search, topic discovery, explainable predictions, and a retrieval-augmented Q&A application.
-
-**Stack:** Python · NLP · DistilBERT · Embeddings · FAISS · RAG
-
-→ [View project](https://github.com/dbechrakis/steam-reviews-nlp-rag)
-
----
-
-## How I approach analytics
-
-```text
-Business Question
-       ↓
-Data Collection & Preparation
-       ↓
-Exploratory & Statistical Analysis
-       ↓
-Modeling / BI / Analytics
-       ↓
-Business Insight
-       ↓
-Action & Measurement
-```
-
-The goal is not simply to produce analysis. It is to **connect analysis to a decision**.
-
----
-
-## Currently focused on
-
-- Business & Data Analytics
-- BI and decision-support solutions
-- SQL and analytical data modeling
-- Data pipelines and modern analytics engineering
-- Applied machine learning and NLP
-
----
-
-## Education
-
-**MSc Data Science — Deree / The American College of Greece**  
-Part-time
-
----
-
-## Let's connect
-
-[LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/) · [GitHub](https://github.com/dbechrakis)
-
----
-
-*Building practical analytics projects with a business-first mindset.*
+[LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/)
