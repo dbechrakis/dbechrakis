@@ -14,6 +14,14 @@ The questions I enjoy most are practical: **What changed? Which segment explains
 
 **Explore $2.30M in sample sales:** filter by year, region and category, compare margins and inspect the evidence behind the recommendations. [Screenshot, source and running instructions](https://github.com/dbechrakis/superstore-shipping-region-analysis#interactive-portfolio-demo).
 
+## Featured: Steam Game Review Explorer
+
+**[Open the live RAG demo →](https://dbechrakis-steam-explorer.streamlit.app/)** · [View the NLP case study and source](https://github.com/dbechrakis/steam-reviews-nlp-rag)
+
+[![Steam Game Review Explorer producing an evidence-grounded answer](https://raw.githubusercontent.com/dbechrakis/steam-reviews-nlp-rag/main/outputs/figures/live_app_gpt_oss.png)](https://dbechrakis-steam-explorer.streamlit.app/)
+
+**Ask questions across 41,170 player reviews from 241 games:** two-stage retrieval finds and reranks relevant evidence, while GPT-OSS produces an answer with inspectable citations. My contribution covered document embeddings, semantic search, DistilBERT fine-tuning, two-stage retrieval and the RAG application artifacts within the MSc team project.
+
 ## Selected work
 
 | Project | Evidence at a glance |
