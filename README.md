@@ -20,10 +20,10 @@ The questions I enjoy most are practical: **What changed? Which segment explains
 |---|---|
 | [Superstore: regional profitability](https://github.com/dbechrakis/superstore-shipping-region-analysis) | **7.02 percentage-point margin gap:** Central **7.92%** vs West **14.94%**, across **9,994 order lines**. [Live demo](https://dbechrakis-superstore.bechrakisd.chatgpt.site). |
 | [Movie analytics pipeline](https://github.com/dbechrakis/movie-analytics-data-pipeline) | **2 dbt models:** movie-level staging and genre × decade summary. TMDB → PostgreSQL → Streamlit; filter regression tested on synthetic data, live pipeline not rerun. |
-| [Steam reviews: NLP and RAG](https://github.com/dbechrakis/steam-reviews-nlp-rag) | DistilBERT: **92.9% accuracy · 0.887 macro F1** on **24,342 held-out-game reviews**. My work: embeddings, fine-tuning and retrieval. Recorded results; training not rerun. |
+| [Steam reviews: NLP and RAG](https://github.com/dbechrakis/steam-reviews-nlp-rag) | DistilBERT: **92.9% accuracy · 0.887 macro F1** on **24,342 held-out-game reviews**. [Live RAG demo](https://dbechrakis-steam-explorer.streamlit.app/): retrieve + rerank over **41,170 reviews across 241 games**, with GPT-OSS answers and inspectable evidence. My work: embeddings, fine-tuning and retrieval. |
 | [Hotel cancellation modelling](https://github.com/dbechrakis/hotel-booking-cancellation-ml) | Random Forest: **0.809 ROC AUC · 0.682 average precision** on **23,989 later-period bookings**. Chronological validation with leakage controls. |
 
-These are portfolio and academic case studies. The Superstore explorer is a public interactive demo. The figures above describe analytical findings, model performance or implementation scope—not realised commercial uplift.
+These are portfolio and academic case studies. The Superstore and Steam explorers are public interactive demos. The figures above describe analytical findings, model performance or implementation scope—not realised commercial uplift.
 
 ## Tools I use
 
