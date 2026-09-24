@@ -2,7 +2,7 @@
 
 ### Business Analyst · Statistics background · MSc Data Science
 
-I work in **Sales Ancillary at Etraveli Group**, analysing commercial performance in travel. My route into analytics started with a degree in **Statistics** and experience in **banking**; I am now completing a part-time **MSc in Data Science at Deree / The American College of Greece**.
+I work in **Sales Ancillary at Etraveli Group**, analysing ancillary performance in Sales. My route into analytics started with a degree in **Statistics** and experience in **banking**; I am now completing a part-time **MSc in Data Science at Deree / The American College of Greece**.
 
 The questions I enjoy most are practical: **What changed? Which segment explains it? What should we do next?** I use SQL, Python and BI tools to move from a headline metric to the evidence behind a decision.
 
