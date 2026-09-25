@@ -1,42 +1,36 @@
 # Dimitrios Bechrakis
 
-### Business Analyst · Statistics background · MSc Data Science
+### Business Analyst | Commercial Analytics · Data Products · Applied Data Science
 
-I work in **Sales Ancillary at Etraveli Group**, analysing ancillary performance in Sales. My route into analytics started with a degree in **Statistics** and experience in **banking**; I am now completing a part-time **MSc in Data Science at Deree / The American College of Greece**.
+Statistics graduate · MSc Data Science (in progress) · Athens, Greece
 
-The questions I enjoy most are practical: **What changed? Which segment explains it? What should we do next?** I use SQL, Python and BI tools to move from a headline metric to the evidence behind a decision.
+I work in **Sales Ancillary at Etraveli Group**, analysing commercial performance and turning metric changes into questions a team can act on. My background is in statistics and banking; my portfolio extends that decision-focused work into data pipelines, predictive modelling and NLP applications.
 
-## Featured: Superstore Profitability Explorer
+**What changed? Which segment explains it? What should we do next?**
 
-**[Open the live demo →](https://dbechrakis-superstore.bechrakisd.chatgpt.site)** · [View the analysis and source](https://github.com/dbechrakis/superstore-shipping-region-analysis)
+## Start with these projects
 
-[![Superstore interactive profitability explorer](https://raw.githubusercontent.com/dbechrakis/superstore-shipping-region-analysis/main/docs/portfolio-overview.jpg)](https://dbechrakis-superstore.bechrakisd.chatgpt.site)
-
-**Explore $2.30M in sample sales:** filter by year, region and category, compare margins and inspect the evidence behind the recommendations. [Screenshot, source and running instructions](https://github.com/dbechrakis/superstore-shipping-region-analysis#interactive-portfolio-demo).
-
-## Featured: Steam Game Review Explorer
-
-**[Open the live RAG demo →](https://dbechrakis-steam-explorer.streamlit.app/)** · [View the NLP case study and source](https://github.com/dbechrakis/steam-reviews-nlp-rag)
-
-[![Steam Game Review Explorer producing an evidence-grounded answer](https://raw.githubusercontent.com/dbechrakis/steam-reviews-nlp-rag/main/outputs/figures/live_app_gpt_oss.png)](https://dbechrakis-steam-explorer.streamlit.app/)
-
-**Ask questions across 41,170 player reviews from 241 games:** two-stage retrieval finds and reranks relevant evidence, while GPT-OSS produces an answer with inspectable citations. My contribution covered document embeddings, semantic search, DistilBERT fine-tuning, two-stage retrieval and the RAG application artifacts within the MSc team project.
-
-## Selected work
-
-| Project | Evidence at a glance |
+| Business question | End-to-end evidence |
 |---|---|
-| [Superstore: regional profitability](https://github.com/dbechrakis/superstore-shipping-region-analysis) | **7.02 percentage-point margin gap:** Central **7.92%** vs West **14.94%**, across **9,994 order lines**. [Live demo](https://dbechrakis-superstore.bechrakisd.chatgpt.site). |
-| [Movie analytics pipeline](https://github.com/dbechrakis/movie-analytics-data-pipeline) | **2 dbt models:** movie-level staging and genre × decade summary. TMDB → PostgreSQL → Streamlit; filter regression tested on synthetic data, live pipeline not rerun. |
-| [Steam reviews: NLP and RAG](https://github.com/dbechrakis/steam-reviews-nlp-rag) | DistilBERT: **92.9% accuracy · 0.887 macro F1** on **24,342 held-out-game reviews**. [Live RAG demo](https://dbechrakis-steam-explorer.streamlit.app/): retrieve + rerank over **41,170 reviews across 241 games**, with GPT-OSS answers and inspectable evidence. My work: embeddings, fine-tuning and retrieval. |
-| [Hotel cancellation modelling](https://github.com/dbechrakis/hotel-booking-cancellation-ml) | Random Forest: **0.809 ROC AUC · 0.682 average precision** on **23,989 later-period bookings**. Chronological validation with leakage controls. |
+| **[Why is regional profit margin lower?](https://github.com/dbechrakis/superstore-shipping-region-analysis)** · Commercial analytics | Central trails West by **7.02 pp**. A reconciled decomposition shows that category/product mix slightly offsets the gap; margins *within* the same products account for **−7.75 pp**. [Explore the live dashboard](https://dbechrakis-superstore.bechrakisd.chatgpt.site) · [Inspect the method](https://github.com/dbechrakis/superstore-shipping-region-analysis/blob/main/docs/margin-driver-method.md). |
+| **[How do raw API records become trustworthy metrics?](https://github.com/dbechrakis/movie-analytics-data-pipeline)** · Data engineering | TMDB API → PostgreSQL → tested dbt staging/mart → filter-aware Streamlit dashboard. Includes data contracts and regression tests; the live external-data pipeline was **not** rerun in the portfolio review. |
+| **[Which hotel bookings merit retention review?](https://github.com/dbechrakis/hotel-booking-cancellation-ml)** · Decision ML | A leakage-aware chronological holdout of **23,989 later bookings**, a reproducible Logistic Regression artifact and a Streamlit threshold simulator. Intervention value is an **assumption-based scenario**, not measured uplift. |
+| **[What are players saying across thousands of reviews?](https://github.com/dbechrakis/steam-reviews-nlp-rag)** · Applied AI | Sentiment modelling reached **0.887 macro F1** on **24,342 held-out-game reviews**. A [live review explorer](https://dbechrakis-steam-explorer.streamlit.app/) retrieves and reranks evidence from **41,170 reviews across 241 games**, with inspectable citations and optional generated answers. |
 
-These are portfolio and academic case studies. The Superstore and Steam explorers are public interactive demos. The figures above describe analytical findings, model performance or implementation scope—not realised commercial uplift.
+Together, these projects show how I move from a business question to a defined metric, a tested data workflow, and a usable decision surface. The Superstore and Steam projects originated in academic teams; the linked repositories describe my contribution and the validation limits. Model scores and historical comparisons are not claims of commercial impact.
 
-## Tools I use
+## Try the live explorers
 
-- **Business analytics:** SQL, Python, pandas, Excel, Power BI/DAX, Qlik Sense and Looker.
-- **Data workflows:** PostgreSQL, dbt, APIs, Git and Streamlit.
-- **Applied data science:** scikit-learn, NLP, embeddings and predictive modelling.
+| Regional profitability | Steam review intelligence |
+|---|---|
+| [![Superstore profitability explorer](https://raw.githubusercontent.com/dbechrakis/superstore-shipping-region-analysis/main/docs/portfolio-overview.jpg)](https://dbechrakis-superstore.bechrakisd.chatgpt.site) | [![Steam review explorer with cited evidence](https://raw.githubusercontent.com/dbechrakis/steam-reviews-nlp-rag/main/outputs/figures/live_app_gpt_oss.png)](https://dbechrakis-steam-explorer.streamlit.app/) |
 
-[LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/)
+## Tools and approach
+
+- **Analysis:** SQL · Python/pandas · Excel · Power BI/DAX · Qlik Sense · Looker
+- **Build:** PostgreSQL · dbt · APIs · Git · Streamlit
+- **Model:** scikit-learn · NLP · embeddings · retrieval
+
+I care about the population behind a KPI, reproducible calculations, honest holdout design and the limits of what observational data can tell us.
+
+[Connect on LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/)
