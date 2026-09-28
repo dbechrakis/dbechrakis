@@ -1,4 +1,4 @@
-# Dimitrios Bechrakis
+# Dimitris Bechrakis
 
 ### Business Analyst | Commercial Analytics · Data Products · Applied Data Science
 
