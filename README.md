@@ -27,6 +27,11 @@ I work as a Business Analyst in **Sales Ancillary at Etraveli Group**. I turn me
 | [![AAPL interval coverage over time](https://raw.githubusercontent.com/dbechrakis/aapl-forecasting-backtest/main/outputs/backtest/rolling_coverage.png)](https://github.com/dbechrakis/aapl-forecasting-backtest) **[AAPL Forecasting Backtest](https://github.com/dbechrakis/aapl-forecasting-backtest)** · [Results](https://github.com/dbechrakis/aapl-forecasting-backtest#results-aapl-2705-daily-origins-jan-2016--oct-2026) · [Live forecasting design](https://github.com/dbechrakis/aapl-forecasting-backtest#live-forecasting-in-production) | [![N-BEATS hourly forecasts on M4](https://raw.githubusercontent.com/dbechrakis/m4-nbeats-forecasting/main/outputs/hourly/example_forecasts.png)](https://github.com/dbechrakis/m4-nbeats-forecasting) **[N-BEATS vs the M4 Benchmarks](https://github.com/dbechrakis/m4-nbeats-forecasting)** · [Results](https://github.com/dbechrakis/m4-nbeats-forecasting#results-on-the-official-m4-test-horizon) · [Model code](https://github.com/dbechrakis/m4-nbeats-forecasting/blob/main/src/deepforecast/nbeats.py) |
 | A rolling-origin backtest over **2,705 daily origins** with leakage tests and Diebold–Mariano significance tests. No model significantly beats the random walk, and gradient boosting is significantly worse. **GARCH-conformal** intervals have the best interval score and hold 21-day coverage in calm and volatile markets alike. A scheduled job issues and scores forecasts after every US close. | N-BEATS implemented from scratch in **PyTorch**, trained as one global model per frequency on **5,000 M4 series** and scored with the official OWA. It beats the best statistical benchmark by **30% on Hourly** and **20% on Weekly** (bootstrap intervals exclude zero), and finds **no gain on Daily**, where series are close to a random walk. |
 
+| Experimentation & causal inference |
+|---|
+| [![Uplift Analyzer: effect estimates, randomization checks and targeting value](https://raw.githubusercontent.com/dbechrakis/uplift-analyzer/main/docs/portfolio-overview.jpg)](https://dbechrakis.github.io/uplift-analyzer/) **[Uplift Analyzer](https://github.com/dbechrakis/uplift-analyzer)** · [Live explorer](https://dbechrakis.github.io/uplift-analyzer/) · [Validation record](https://github.com/dbechrakis/uplift-analyzer/blob/main/VALIDATION.md) · [LLM evaluation](https://github.com/dbechrakis/uplift-analyzer#llm-evaluation) |
+| Incrementality on the **13.98M-user Criteo randomized-test file**. The raw effect on visits is **+1.03 pp** and **+0.77 pp** after covariate adjustment, because a balance test shows assignment is slightly predictable from the features. Only **3.6%** of treated users were exposed, so the effect on users who actually saw the ad is **+28.7 pp** (instrumental variable). A local 4B LLM answers only through validated tools and never computes a number, and a grounding check flags any figure it cannot trace. Hardened containers, Trivy and a weekly LLM regression gate run in CI. |
+
 ## What runs in production
 
 | Project | Serving pattern | Automated checks |
@@ -35,6 +40,7 @@ I work as a Business Analyst in **Sales Ancillary at Etraveli Group**. I turn me
 | Steam reviews | Retrieval API in Docker with the models baked in and offline at runtime | On retrieval changes and weekly: 80-question benchmark regression gate, container queried end to end |
 | AAPL forecasting | Scheduled batch forecast (GitHub Actions) with a public track record | Every push: look-ahead tests (changing future prices cannot change any past forecast) |
 | Movie analytics | API → PostgreSQL → dbt → dashboard pipeline | 11 dbt data tests on each pipeline run; unit tests on every push |
+| Uplift Analyzer | Static explorer on GitHub Pages plus a hardened Docker stack (nginx, Streamlit, local llama.cpp) | Every push: tests, pip-audit, Trivy image scan, compose smoke test. Weekly: 61-question LLM regression gate |
 
 These projects started from different problems. Superstore and Steam originated in academic teams; the repositories record contribution and validation limits. Historical model scores and scenarios are not claims of commercial impact.
 
@@ -42,8 +48,8 @@ These projects started from different problems. Superstore and Steam originated 
 
 - **Analyse:** SQL, Python/pandas, Excel, Power BI/DAX, Qlik Sense, Looker.
 - **Engineer:** PostgreSQL, dbt, APIs, Git, reproducible tests and CI.
-- **Model:** scikit-learn, PyTorch (N-BEATS), gradient boosting, NLP, embeddings, retrieval, time-series backtesting, GARCH volatility, probability calibration, conformal prediction.
-- **Ship:** FastAPI, Docker, MLflow, GitHub Actions (CI gates and scheduled jobs), Streamlit.
+- **Model:** scikit-learn, PyTorch (N-BEATS), gradient boosting, NLP, embeddings, retrieval, time-series backtesting, GARCH volatility, probability calibration, conformal prediction, uplift modeling, instrumental variables (CACE), covariate adjustment, power analysis.
+- **Ship:** FastAPI, Docker (hardened, Trivy, pip-audit), MLflow, GitHub Actions (CI gates and scheduled jobs), Streamlit, local LLMs with tool calling (llama.cpp).
 
 I care about the population behind each KPI, reproducible calculations, honest validation (including the results where the fancy model loses), and the limits of observational evidence.
 
