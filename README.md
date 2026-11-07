@@ -43,7 +43,7 @@ These projects started from different problems. Superstore and Steam originated 
 
 ## How I build
 
-- **Analyse:** SQL, Python/pandas, Excel, Power BI/DAX.
+- **Analyse:** SQL, Python/pandas, Excel, Power BI/DAX, plus Qlik Sense and Looker at work.
 - **Engineer:** PostgreSQL, dbt, APIs, Git, reproducible tests and CI.
 - **Model:** scikit-learn, PyTorch (N-BEATS), gradient boosting, NLP, embeddings, retrieval, time-series backtesting, GARCH volatility, probability calibration, conformal prediction, uplift modeling, instrumental variables (CACE), covariate adjustment, power analysis.
 - **Ship:** FastAPI, Docker (hardened, Trivy, pip-audit), MLflow, GitHub Actions (CI gates and scheduled jobs), Streamlit, local LLMs with tool calling (llama.cpp).
