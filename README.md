@@ -2,7 +2,7 @@
 
 ### Business Analyst · Commercial Analytics & Experimentation · Applied Data Science
 
-Statistics graduate · MSc Data Science in progress · Athens, Greece · [LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/)
+Statistics graduate · MSc Data Science in progress · Athens, Greece · [LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/) · [Email](mailto:bechrakisd@gmail.com)
 
 I work as a Business Analyst in **Sales Ancillary at Etraveli Group**. I turn metric changes into testable business questions, build reproducible data and ML workflows, and ship them as tested services, not just notebooks.
 
