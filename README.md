@@ -8,6 +8,19 @@ I work as a Business Analyst in **Sales Ancillary at Etraveli Group**. I turn me
 
 **What changed? Which segment explains it? What should we do next?**
 
+## Flagship: Missed-Connection Protection Pricing
+
+[![Missed-connection pricing demo: chance of a miss, claim cost, price and the offer decision for a connection](https://raw.githubusercontent.com/dbechrakis/missed-connection-pricing/main/docs/portfolio-overview.jpg)](https://dbechrakis.github.io/missed-connection-pricing/)
+
+**[Missed-Connection Protection Pricing](https://github.com/dbechrakis/missed-connection-pricing)** · [Live demo](https://dbechrakis.github.io/missed-connection-pricing/) · [Decision memo](https://github.com/dbechrakis/missed-connection-pricing/blob/main/docs/decision-memo.md) · [Validation](https://github.com/dbechrakis/missed-connection-pricing/blob/main/VALIDATION.md) · [Pre-registration](https://github.com/dbechrakis/missed-connection-pricing/blob/main/PREREGISTRATION_2026H2_V3.md)
+
+Should an online travel agency sell protection against missed flight connections, at what price, and where should it refuse? Built from public US data only (BTS on-time and delay causes, DB1B tickets, GSA hotel rates) for five hubs.
+
+- Prices fixed before the test ran a **60.5% loss ratio against a 65% target** on **37.1M connections** the model had never seen. One flat price would have run **117%** if risky connections buy more.
+- An audit of my own assumptions found airlines already pay for much of what the cover pays. So the product was re-scoped to the gap they leave: hotel nights after weather or air-traffic disruptions, **40.6% to 72.5%** of misses.
+- That gap is a correlated weather risk. Months ran **0.84 to 1.37×** expected claims and no model choice removed it, so the margin, not the model, has to carry it.
+- The next test is **pre-registered and tagged before its data exists** (September to December 2026), with every earlier look at the data disclosed.
+
 ## Featured work
 
 *Superstore and Uplift demos open instantly (GitHub Pages). The Hotel and Steam apps run on free Streamlit hosting and can take about a minute to wake up if idle.*
@@ -33,6 +46,7 @@ I work as a Business Analyst in **Sales Ancillary at Etraveli Group**. I turn me
 
 | Project | Serving pattern | Automated checks |
 |---|---|---|
+| Missed-connection pricing | One price table behind a static demo, a CLI and a FastAPI service in a read-only, non-root Docker image; monthly recalibration job | Every push: 244 tests incl. leakage guards, 450 container quotes must equal the code's, frozen model hashes, pip-audit. Weekly: watches BTS for the pre-registered months |
 | Hotel cancellation | Real-time REST API (FastAPI, Docker), MLflow registry, calibrated probabilities, score logging and PSI drift monitoring | Every push: image built, container queried, API score must equal artifact score |
 | Steam reviews | Retrieval API in Docker with the models baked in and offline at runtime | On retrieval changes and weekly: 80-question benchmark regression gate, container queried end to end |
 | AAPL forecasting | Scheduled batch forecast (GitHub Actions) with a public track record | Every push: look-ahead tests (changing future prices cannot change any past forecast) |
@@ -44,8 +58,8 @@ These projects started from different problems. Superstore and Steam originated 
 ## How I build
 
 - **Analyse:** SQL, Python/pandas, Excel, Power BI/DAX, plus Qlik Sense and Looker at work.
-- **Engineer:** PostgreSQL, dbt, APIs, Git, reproducible tests and CI.
-- **Model:** scikit-learn, PyTorch (N-BEATS), gradient boosting, NLP, embeddings, retrieval, time-series backtesting, GARCH volatility, probability calibration, conformal prediction, uplift modeling, instrumental variables (CACE), covariate adjustment, power analysis.
+- **Engineer:** PostgreSQL, DuckDB and Parquet, dbt, APIs, Git, reproducible tests and CI.
+- **Model:** scikit-learn, PyTorch (N-BEATS), gradient boosting, NLP, embeddings, retrieval, time-series backtesting, GARCH volatility, probability calibration, conformal prediction, uplift modeling, instrumental variables (CACE), covariate adjustment, power analysis, pre-registered validation.
 - **Ship:** FastAPI, Docker (hardened, Trivy, pip-audit), MLflow, GitHub Actions (CI gates and scheduled jobs), Streamlit, local LLMs with tool calling (llama.cpp).
 
 I care about the population behind each KPI, reproducible calculations, honest validation (including the results where the fancy model loses), and the limits of observational evidence.
