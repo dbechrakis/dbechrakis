@@ -19,6 +19,7 @@ Should an online travel agency sell protection against missed flight connections
 - Prices fixed before the test ran a **60.5% loss ratio against a 65% target** on **37.1M connections** the model had never seen. One flat price would have run **117%** if risky connections buy more.
 - An audit of my own assumptions found airlines already pay for much of what the cover pays. So the product was re-scoped to the gap they leave: hotel nights after weather or air-traffic disruptions, **40.6% to 72.5%** of misses.
 - That gap is a correlated weather risk. Months ran **0.84 to 1.37×** expected claims and no model choice removed it, so the margin, not the model, has to carry it.
+- I listed 14 limits of my own work and worked through them: **5 closed, 7 reduced to one named input only an agency can supply, 2 open** (demand needs customers, the clean test needs the data to exist). As it would be sold, the cover ran a **75% loss ratio over 26 backtest months against a 65% target**, so I report that, not just the average.
 - The next test is **pre-registered and tagged before its data exists** (September to December 2026), with every earlier look at the data disclosed.
 
 ## Featured work
