@@ -1,6 +1,6 @@
 # Dimitris Bechrakis
 
-### Business Analyst · Commercial Analytics & Experimentation · Applied Data Science
+### Business Analyst: I turn a commercial question into a tested decision, with pricing, experimentation and honest limits
 
 Statistics graduate · MSc Data Science in progress · Athens, Greece · [LinkedIn](https://www.linkedin.com/in/dimitrisbechrakis/) · [Email](mailto:bechrakisd@gmail.com)
 
@@ -16,12 +16,9 @@ I work as a Business Analyst in **Sales Ancillary at Etraveli Group**. I turn me
 
 Should an online travel agency sell protection against missed flight connections, at what price, and where should it refuse? Built from public US data only (BTS on-time and delay causes, DB1B tickets, GSA hotel rates) for five hubs.
 
-- Prices fixed before the test ran a **60.5% loss ratio against a 65% target** on **37.1M connections** the model had never seen. One flat price would have run **117%** if risky connections buy more.
-- An audit of my own assumptions found airlines already pay for much of what the cover pays. So the product was re-scoped to the gap they leave: hotel nights after weather or air-traffic disruptions, **40.6% to 72.5%** of misses.
-- That gap is a correlated weather risk. Months ran **0.84 to 1.37×** expected claims and no model choice removed it, so the margin, not the model, has to carry it.
-- I listed 14 limits of my own work and worked through them: **5 closed, 7 reduced to one named input only an agency can supply, 2 open** (demand needs customers, the clean test needs the data to exist). As it would be sold, the cover ran a **75% loss ratio over 26 backtest months against a 65% target**, so I report that, not just the average.
-- Self-transfers on two tickets, where no airline owes the traveller anything, were **pre-registered and read once** on 3.2M connections in 2026. The price came out **16% too low** (1.16 against a 0.85 to 1.15 band), so that headline failed and I report it as the result. Two repairs are pre-registered and frozen before their data exists: a refit with a level rule for September to November 2026, and a price loading for the winter of 2026 to 2027.
-- The next test is **pre-registered and tagged before its data exists** (September to December 2026), with every earlier look at the data disclosed.
+- **The first test.** Prices fixed before the test ran a **60.5% loss ratio against a 65% target** on **37.1M connections** the model had never seen. One flat price would have run **117%** if risky connections buy more. An audit of my own assumptions then re-scoped the product to the hotel nights airlines do not pay for, **40.6% to 72.5%** of misses.
+- **What did not hold up, reported as results.** As it would be sold, the cover ran a **75% loss ratio over 26 backtest months against 65%**. Self-transfer prices came out **16% too low** (1.16 against a 0.85 to 1.15 band). Six earlier years, **44 months of 2019 to 2023**, were pre-registered and read once. The price ran **0.96** of expected claims and **five of eight expectations failed**. The cover as sold ran **60.6%** under the pre-registered fit and **68% to 71%** under three other ways of fitting the model, so I do not claim the better figure.
+- **The habit.** Every test is pre-registered and tagged before its data exists, read once, and reported in the same commit whether it passes or fails. A calendar pattern found afterwards (claims **27% above expected in June and July**) is frozen and pre-registered for March to August 2027. The next sealed read is September to November 2026.
 
 ## Featured work
 
@@ -48,7 +45,7 @@ Should an online travel agency sell protection against missed flight connections
 
 | Project | Serving pattern | Automated checks |
 |---|---|---|
-| Missed-connection pricing | The recommended gap cover and the original cover, each from one price table, behind a static demo, a CLI and a FastAPI service in a read-only, non-root Docker image; monthly recalibration job | Every push: 315 tests incl. leakage guards, 750 container quotes must equal the code's, frozen models must predict as frozen, pip-audit. Weekly: watches BTS for the pre-registered months |
+| Missed-connection pricing | The recommended gap cover and the original cover, each from one price table, behind a static demo, a CLI and a FastAPI service in a read-only, non-root Docker image; monthly recalibration job | Every push: the full test suite incl. leakage guards, 750 container quotes must equal the code's, frozen models must predict as frozen, pip-audit. Weekly: watches BTS for the pre-registered months |
 | Hotel cancellation | Real-time REST API (FastAPI, Docker), MLflow registry, calibrated probabilities, score logging and PSI drift monitoring | Every push: image built, container queried, API score must equal artifact score |
 | Steam reviews | Retrieval API in Docker with the models baked in and offline at runtime | On retrieval changes and weekly: 80-question benchmark regression gate, container queried end to end |
 | AAPL forecasting | Scheduled batch forecast (GitHub Actions) with a public track record | Every push: look-ahead tests (changing future prices cannot change any past forecast) |
@@ -59,10 +56,10 @@ These projects started from different problems. Superstore and Steam originated 
 
 ## How I build
 
-- **Analyse:** SQL, Python/pandas, Excel, Power BI/DAX, plus Qlik Sense and Looker at work.
-- **Engineer:** PostgreSQL, DuckDB and Parquet, dbt, APIs, Git, reproducible tests and CI.
-- **Model:** scikit-learn, PyTorch (N-BEATS), gradient boosting, NLP, embeddings, retrieval, time-series backtesting, GARCH volatility, probability calibration, conformal prediction, uplift modeling, instrumental variables (CACE), covariate adjustment, power analysis, pre-registered validation.
-- **Ship:** FastAPI, Docker (hardened, Trivy, pip-audit), MLflow, GitHub Actions (CI gates and scheduled jobs), Streamlit, local LLMs with tool calling (llama.cpp).
+- **Analyse:** SQL, Python and pandas, Excel, Power BI and DAX, Qlik Sense and Looker at work. See the [Superstore SQL case](https://github.com/dbechrakis/superstore-shipping-region-analysis/blob/main/sql/README.md).
+- **Test:** pre-registered validation, uplift modeling and instrumental variables in [Uplift Analyzer](https://github.com/dbechrakis/uplift-analyzer), forecast backtests with leakage tests in [AAPL](https://github.com/dbechrakis/aapl-forecasting-backtest).
+- **Model:** gradient boosting, calibration and NLP retrieval in [Hotel](https://github.com/dbechrakis/hotel-booking-cancellation-ml) and [Steam](https://github.com/dbechrakis/steam-reviews-nlp-rag), PyTorch in [N-BEATS](https://github.com/dbechrakis/m4-nbeats-forecasting).
+- **Ship:** FastAPI, Docker, MLflow and GitHub Actions gates, dbt and PostgreSQL in the [movie pipeline](https://github.com/dbechrakis/movie-analytics-data-pipeline).
 
 I care about the population behind each KPI, reproducible calculations, honest validation (including the results where the fancy model loses), and the limits of observational evidence.
 
