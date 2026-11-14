@@ -6,6 +6,31 @@ Scope of the review. For each repository the reviewer read the README, the valid
 
 Part 1 is what the review found. Part 2 is the task list. Each task states the files, what done means, where to stop, and whether something must be fixed in writing before data is looked at.
 
+## Status, 14 November 2026
+
+Each repository has a branch `claude/portfolio-review`, pushed and not merged. Open a pull request only when you want one.
+
+| Task | State | Where |
+|---|---|---|
+| P1 profile page | Done on this branch. Decision: Superstore stays featured and AAPL stays in More work | `README.md` |
+| U1 corrected Qini | Done. The visit coefficient falls from 531 to 377 and the conversion interval now includes zero | uplift-analyzer, `core/dr_scores.py`, `VALIDATION.md` |
+| U2 policy value on unseen users | Not done. The existing split-half check (100 halvings, about 20% loss) already answers most of it | |
+| U3 three real-model evaluation runs | Not done. Needs the local model server | |
+| H1 rolling backtest | Done. Recall at the threshold runs 66% to 90% across four cutoffs | hotel-booking-cancellation-ml |
+| H2 `country` | Done as you decided. Removed from the deployed model, which loses 0.023 average precision | hotel-booking-cancellation-ml |
+| H3 monitoring action replay | Done. Recall 65% to 87%, at the cost of flagging 73% instead of 44% of bookings | hotel-booking-cancellation-ml |
+| S1 human audit | The blind sample of 60 claims and the scoring command are ready. **The judging is yours** | steam-reviews-nlp-rag, `evaluation/audit/human_audit_sample.csv` (not in git) |
+| S2 Steam requirements | Partly. The six packages the serving file pins are pinned. The rest stay open because the notebook environment was not saved | steam-reviews-nlp-rag |
+| S3 uncited sentences | Not done. Needs the Groq secret | |
+| A1 AAPL panel | Design committed. The run was still going when this was written. See that repository's `VALIDATION.md` for the result once it exists | aapl-forecasting-backtest |
+| A2 adaptive conformal, A3 live-method rule | Not done | |
+| M1 movie pins and series table | Done | movie-analytics-data-pipeline |
+| N1 M4 tests | Done | m4-nbeats-forecasting |
+| X1 lint | Done for hotel, Steam and AAPL. Six Steam files stay exempt because their hashes are pinned in the evidence. The archive move was not done | |
+| X2 validation headers | Done for six repositories | |
+
+One mistake was made and fixed on the way: the first lint change in Steam altered six files whose hashes the provenance check pins, and `scripts/verify_retrieval_evidence.py` failed. It was caught before anything was merged, and the files were restored.
+
 ## Part 1. Findings
 
 ### 1.1 The profile page
