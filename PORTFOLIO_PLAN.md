@@ -8,7 +8,7 @@ Part 1 is what the review found. Part 2 is the task list. Each task states the f
 
 ## Status, 14 November 2026
 
-Each repository has a branch `claude/portfolio-review`, pushed and not merged. Open a pull request only when you want one.
+The pull requests of the six repositories were opened and merged on 14 November 2026 with your approval, after their checks passed. The profile page was merged from a branch that holds only `README.md`. This file stays on its own branch. Not redeployed: the hosted hotel app, because the Hugging Face deploy job was skipped on the merge.
 
 | Task | State | Where |
 |---|---|---|
@@ -22,8 +22,9 @@ Each repository has a branch `claude/portfolio-review`, pushed and not merged. O
 | S1 human audit | The blind sample of 60 claims and the scoring command are ready. **The judging is yours** | steam-reviews-nlp-rag, `evaluation/audit/human_audit_sample.csv` (not in git) |
 | S2 Steam requirements | Partly. The six packages the serving file pins are pinned. The rest stay open because the notebook environment was not saved | steam-reviews-nlp-rag |
 | S3 uncited sentences | Not done. Needs the Groq secret | |
-| A1 AAPL panel | Design committed. The run was still going when this was written. See that repository's `VALIDATION.md` for the result once it exists | aapl-forecasting-backtest |
-| A2 adaptive conformal, A3 live-method rule | Not done | |
+| A1 AAPL panel | Done and merged. No model beats the random walk on any of 20 tickers after correction, gradient boosting is worse, only the conformal one-day intervals pass Kupiec on every ticker. The interval-score ranking is only partly the AAPL one | aapl-forecasting-backtest |
+| A2 adaptive conformal | Not done | |
+| A3 live-method rule | Done, written and not applied | aapl-forecasting-backtest |
 | M1 movie pins and series table | Done | movie-analytics-data-pipeline |
 | N1 M4 tests | Done | m4-nbeats-forecasting |
 | X1 lint | Done for hotel, Steam and AAPL. Six Steam files stay exempt because their hashes are pinned in the evidence. The archive move was not done | |
