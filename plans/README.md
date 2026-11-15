@@ -58,3 +58,36 @@ This is a recommendation and not a rule.
 - The hotel source file was downloaded and matched its recorded SHA-256. Occupancy counts for plan 04 were computed from it and are quoted there as feasibility counts.
 - The Criteo file's host answered. The name `whatchanged` was free on PyPI.
 - The Expedia file was not downloaded, because it needs the owner's Kaggle account. Plan 01 therefore states its facts about that file as expectations to verify in its first work package.
+
+## How to start a session on a plan
+
+A new session remembers nothing of the conversation that produced these plans. Everything it needs is in this directory. Start the session with the target repository **and** `dbechrakis/dbechrakis` attached, and open with:
+
+> Read `plans/README.md` and `plans/<file>` on branch `claude/funny-pasteur-cdi67q` of `dbechrakis/dbechrakis`. Execute that plan in `<target repository>`, starting at work package 0. Follow the plan's gates. Stop and report where it says the owner decides.
+
+For the two new repositories (plans 01 and 02), the first commit copies the plan into the new repository as `docs/plan.md`, so that later sessions need only that repository.
+
+To continue a plan in a later session, add: "Continue from the status paragraph at the top of `VALIDATION.md`." Each plan asks the executing model to leave that paragraph at the end of every session.
+
+## Decisions taken on 15 November 2026, so that they are not lost
+
+**What the portfolio lacked, and which plan answers it.**
+
+| Gap | Plan |
+|---|---|
+| Nothing optimises a decision under a constraint | 04 |
+| No choice model, ranking or position bias, the core of ancillary sales | 01 |
+| No Bayesian or hierarchical model | 05 |
+| A finished experiment is analysed, and none is designed or monitored | 06 |
+| Every project is a case study, and nothing is software that others install | 02 |
+| No causal study of a real policy without randomization | 03, parked |
+
+**Considered and rejected.**
+
+- **A marketing mix model.** No public dataset with a known truth was found, so it could not be validated honestly.
+- **A third language model project** (a text-to-SQL agent over a semantic layer). Two such projects exist already.
+- **Another forecasting project or another tabular classifier.** Both are covered.
+
+**Parked: plan 03, the Athens short-term rental freeze.** New short-term rental registrations were frozen in municipal districts 1 to 3 of Athens from 1 January 2025, and in the first district of Thessaloniki in 2026. Sources disagree on the Thessaloniki start (March or July) and on the Athens end date, so the Government Gazette must be checked. Inside Airbnb publishes Athens snapshots under CC BY 4.0, and only the last twelve months are free. The snapshots from before 2025 need an archive request through its data requests page. **The owner sends that request first. The plan is written only when the data arrives.**
+
+**A note on the earlier review.** `PORTFOLIO_PLAN.md` said no new project should start before the flagship's forward reads. Those reads are scheduled jobs in February, May, August and November 2027 and need no work until then, so these plans do not compete with them. Plan 05 is built to sit beside them without touching them.
