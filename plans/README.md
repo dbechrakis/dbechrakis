@@ -12,6 +12,8 @@ Each plan is a handoff. An executing model should be able to run it from the fil
 | [05 Bayesian season by hub](05-pricing-bayesian-hub-season.md) | `missed-connection-pricing` | Existing | 3 to 4 weeks | Hierarchical Bayesian modelling |
 | [06 Sequential testing](06-uplift-sequential-testing.md) | `uplift-analyzer` | Existing | 2 weeks | Experiment design and monitoring |
 
+**Status, 15 November 2026: plan 01 is parked.** The Kaggle competition data could not be downloaded in the cloud session, and the owner chose not to spend more time on it. The plan stays valid if `train.csv` of `expedia-personalized-sort` is obtained later. A fallback on the open Open Bandit Dataset (ZOZO, CC BY 4.0, 413 MB, mirrored on Hugging Face as `zozonext/open-bandit`) would keep position bias and offline evaluation but lose price and the worth of a position in money, so it is judged not worth writing now. Execute plans 06, 04, 05 and 02.
+
 Plan 03 (the Athens short-term rental freeze) is not written. It depends on archived Inside Airbnb data from before 2025, which must be requested first.
 
 ## Suggested order
